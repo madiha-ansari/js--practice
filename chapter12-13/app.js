@@ -78,32 +78,71 @@ else{
 // }
 // end
 
-// q no 5
-// 5. Write a program that
-// a. Store correct password in a JS variable.
-// b. Asks user to enter his/her password
-// c. Validate the two passwords:
-// i. Check if user has entered password. If not, then
-// give message “ Please enter your password”
-// ii. Check if both passwords are same. If they are
-// same, show message “Correct! The password you
-// entered matches the original password”. Show
-// “Incorrect password” otherwise.
+
+//question-5
+/*Write a program that 
+a. Store correct password in a JS variable. 
+b.  Asks user to enter his/her password 
+c.  Validate the two passwords: 
+i. Check if user has entered password. If not, then 
+give message “ Please enter your password” 
+ii. Check if both passwords are same. If they are 
+same, show message “Correct! The password you 
+entered matches the original password”. Show 
+“Incorrect password” otherwise. */
+
+// answer
+var password = "madihaansari514";
+var userInput = prompt("Enter a password");
+
+if (userInput == "") {
+    alert("please enter your a password!")
+} else if (userInput === password) {
+    alert("password is correct")
+} else {
+    alert("password is incorrect")
+}
+
+//question-6
+/*This if/else statement does not work. Try to fix it: 
+var greeting; 
+var hour = 13; 
+if (hour < 18) { 
+greeting = "Good day"; 
+else 
+greeting = "Good evening"; 
+} */
 
 // Answer
 
-let greeting;
-let time = 15;
+// var greeting; 
+// var hour = 13; 
+// if (hour < 18) { 
+// greeting = "Good day"}
+// else {greeting = "Good evening"};
 
-if (time < 18 ){
-    greeting = ' Good Day! '
+
+//question-7
+/*Write a program that takes time as input from user in 24 
+hours clock format like: 1900 = 7pm. Implement the 
+following case using if, else & else if statements  */
+// Answer
+var userInput = +prompt("Enter the time in 24 hours clock format");
+
+if (userInput >= 0 && userInput <=1200) {
+    alert("Good Morning, Have a Good Day!")
+}
+else if(userInput >= 1200 && userInput <= 1700){
+    alert("Good Afternoon! Can you go with me for a lunch?")
+}
+else if(userInput >=1700 && userInput <= 2000){
+    alert("Good Evening, You Should Take Tea!")
+}
+else if(userInput >= 2000 && userInput <= 2400){
+    alert("Good Night, Have a sweet Dreams!")
 }
 else{
-    greeting = ' Good Evening! '    
+    alert("please enter a 24 hours clock format!")
 }
 
-let hour = +prompt('write a hour in 24 hour format:' , 'from 0-24');
-var minutes = +prompt('Writa minutes from 0-59')
-if (hour >= 0 && hour <= 24  ){
-    alert ('The time in 12-hour clock format is: ' )
-}
+//_______________________ending coading_______________________________________________
