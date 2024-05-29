@@ -144,11 +144,9 @@ document.write("<br><br> Selected Cities Lists :" + "<br>" + selectedCities);
 // var arr = [“This ”, “ is ”, “ my ”, “ cat”];
 // (Use array’s join method)
 
-let arr = ["This", " is", " my", " cat"];
-document.write("<h1>Array: " + arr);
-document.write("<br>String: " + arr.join(" "));
-document.write("<br>String: " + arr.join("-"));
-document.write("<br>String: " + arr.join("_"));
+var arr = ["This", " is", " my", " cat"];
+document.write("<h1>Array: " + "<br>" + arr);
+document.write("<br><br><br>String: " + "<br>" + arr.join(" "));
 
 // 13. Create a new array. Store values one by one in such a way
 // that you can access the values in the order in which they
@@ -161,36 +159,37 @@ newArray.push("Mouse");
 newArray.push("Printer");
 newArray.push("Monitor");
 
-document.write("<h1>Devices: <br>" + newArray);
+document.write("<h1> <br><br> Devices: <br>" + newArray);
 
-let removeFiFo1 = newArray.shift();
-let removeFiFo2 = newArray.shift();
-let removeFiFo3 = newArray.shift();
-let removeFiFo4 = newArray.shift();
+let firstFiFoOne = newArray.shift();
+let secondFiFoTwo = newArray.shift();
+let thirdFiFoThird = newArray.shift();
+let fourFiFoFour = newArray.shift();
 
-document.write("<br><br> <h1> Out: <br>" + removeFiFo1 + "<br> Out: <br>" + removeFiFo2 + "<br> Out: <br>" + removeFiFo3 + "<br> Out: <br>" + removeFiFo4);
+document.write("<br><br> <h1> Out: <br>" + firstFiFoOne + "<br> Out: <br>" + 
+secondFiFoTwo + "<br> Out: <br>" + thirdFiFoThird + "<br> Out: <br>" + fourFiFoFour);
 
 // 14. Create a new array. Store values one by one in such a way
 // that you can access the values in reverse order. (Last In-
 // First Out)
 
 // Answer
-// let emptyArray = [];
+// let secondArray = [];
 
-// emptyArray.push("Keyboard");
-// emptyArray.push("Mouse");
-// emptyArray.push("Printer");
-// emptyArray.push("Monitor");
+// secondArray.push("Keyboard");
+// secondArray.push("Mouse");
+// secondArray.push("Printer");
+// secondArray.push("Monitor");
 
-// console.log(emptyArray);
-// document.write("<h2>Devices: <br>" + emptyArray);
+// console.log(secondArray);
+// document.write("<h2>Devices: <br>" + secondArray);
 
-// let removeFiFo1 = emptyArray.pop();
-// let removeFiFo2 = emptyArray.pop();
-// let removeFiFo3 = emptyArray.pop();
-// let removeFiFo4 = emptyArray.pop();
+// let firstFiFoOne = secondArray.pop();
+// let secondFiFoTwo = secondArray.pop();
+// let thirdFiFoThird = secondArray.pop();
+// let fourFiFoFour = secondArray.pop();
 
-// document.write("<br><br> Out: <br>" + removeFiFo1 + "<br> Out: <br>" + removeFiFo2 + "<br> Out: <br>" + removeFiFo3 + "<br> Out: <br>" + removeFiFo4);*/
+// document.write("<br><br> Out: <br>" +  firstFiFoOne + "<br> Out: <br>" +secondFiFoTwo  + "<br> Out: <br>" + thirdFiFoThird + "<br> Out: <br>" + fourFiFoFour );*/
 
 // 15. Write a program to store phone manufacturers (Apple,
 //     Samsung, Motorola, Nokia, Sony & Haier) in an array.
@@ -199,7 +198,7 @@ document.write("<br><br> <h1> Out: <br>" + removeFiFo1 + "<br> Out: <br>" + remo
 
 // Answer
 let phoneManufacturers = ["Apple", "Samsung"," Motorola"," Nokia", "Sony" , "Haier"];
-document.write('<label for="manufacturers">Choose a phone manufacturer:</label>');
+document.write(' <br> <br> <label for="manufacturers">Choose a phone manufacturer:</label>');
 document.write('<select id="manufacturers" name="manufacturers">');
 document.write('<option value="' + phoneManufacturers[0] + '">' + phoneManufacturers[0] + '</option>');
 document.write('<option value="' + phoneManufacturers[1] + '">' + phoneManufacturers[1] + '</option>');
@@ -208,4 +207,5 @@ document.write('<option value="' + phoneManufacturers[3] + '">' + phoneManufactu
 document.write('<option value="' + phoneManufacturers[4] + '">' + phoneManufacturers[4] + '</option>');
 document.write('<option value="' + phoneManufacturers[5] + '">' + phoneManufacturers[5] + '</option>');
 document.write('</select>');
+
 // ending coading
