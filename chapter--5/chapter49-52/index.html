@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>events</title>
+</head>
+<body>
+
+    <!-- q 1 -->
+    <!-- form start -->
+    <form action="" method="post" onsubmit="getValues(event)" style=" width: 725px; margin-left: 265px;">
+        <fieldset style="border: 2px solid black; margin: 10px;">
+            <!-- form head start  -->
+            <legend style="text-align: center;">
+                <h2>Signup Form</h2>
+            </legend>
+            <!-- form head end  -->
+
+            <!-- first name -->             
+            <label for="name"><strong style="font-size: 18px;">First Name:</strong></label><br>
+            <input id="name" type="text" name="first-name" placeholder="Enter Your First name" required
+                style="width: 600px; height: 20px;">
+
+            <!-- last name -->
+            <br><br>
+            <label for="last-name"><strong style="font-size: 18px;">Last Name:</strong></label><br>
+            <input id="last-name" type="text" name="last-name" placeholder="Enter Your Last name" required
+                style="width: 600px; height: 20px;">
+
+            <!-- email address -->
+
+            <br><br>
+            <label for="Email"><strong style="font-size: 18px;">Email Address:</strong></label><br>
+            <input id="Email" type="email" name="email" placeholder="Enter Your Email" required
+                style="width: 600px; height: 20px;">
+
+            <!-- password -->
+
+            <br><br>
+            <label for="password"><strong style="font-size: 18px;">Password:</strong></label><br>
+            <input id="password" type="password" maxlength="15" name="password" placeholder="Enter Your Password"
+                style="width: 600px; height: 20px;">
+
+                <br><br>
+                <button type="reset">Reset</button>
+              <button type="submit">Submit</button>
+
+        </fieldset>
+
+    </form>
+
+    <div id="formData"></div>
+    <!-- form end -->
+
+
+<!-- q 2 -->
+<h1 style="text-align: center;">Story</h1>
+<p id="story">In a small town nestled between rolling hills, lived a young girl named Lily. She loved flying kites, and every weekend, she would race to the park with her favorite bright red kite. One sunny Saturday, as she prepared for another day of kite flying, she noticed an elderly man sitting alone on a bench, looking wistfully at the sky. <br><br>
+    The man, Mr. Thompson, was known to the townspeople as a kind soul who had once been a renowned kite maker. However, he hadn't flown a kite in years due to his declining health. Lily, always keen to share her joy, approached Mr. Thompson with a smile.<br><br>
+    “Hello, Mr. Thompson! Would you like to see my kite fly?” she asked.
+     <a href="JavaScript:void(0)" onclick="readMore()">Read More</a></p>
+
+    <script src="app.js"></script>
+</body>
+</html>
