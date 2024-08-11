@@ -1,0 +1,106 @@
+*{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+ }
+ 
+ body{
+     /* background-color: rgb(247, 233, 240); */
+     background-image: url(download.jpeg);
+     background-repeat: no-repeat;
+     background-size: cover;
+ }
+ 
+ .main{
+     height: 530px;
+     width: 25%;
+     background-color: rgb(4, 13, 21);
+     border-radius: 10px;
+   padding: 15px;
+   margin-left: 35%;
+   margin-top: 22px;
+   box-shadow: 10px 8px 10px rgba(113, 115, 119, 0.5);
+   background: linear-gradient(0deg, #71a1e4, rgb(245, 247, 249));
+ }
+ 
+ .input-div{
+ height: 140px;
+ width: 100%;
+ background-color: rgba(178, 21, 86, 0.175);
+ border-radius: 5px;
+ box-shadow: 3px 3px 18px rgb(21, 47, 244);
+ border-radius: 8px;
+ }
+ 
+ .input-div input{
+ height: 140px;
+ width: 100%;
+ border: none;
+ outline: none;
+ background-color: rgba(222, 217, 217, 0.175);
+ border-radius: 5px;
+ font-size: 40px;
+ }
+ 
+ .btn-div{
+     height: 380px;
+     width: 100%;
+ margin-top: 20px;
+ }
+ 
+ .btn-div button{
+     border: none;
+     padding: 10px;
+     border-radius: 50%;
+     height: 60px;
+     width: 60px;
+     font-size: 20px;
+     box-shadow: 3px 3px 10px rgb(19, 44, 232);
+     background-color: rgba(38, 107, 24, 0.175);
+     cursor: pointer;
+     margin: 6.9px;
+     font-weight: 600;
+ }
+ 
+ .btn-div button:hover{
+ transform: scale(0.9);
+ }
+ 
+ #merge{
+     height: 50px;
+     width: 139px;
+     border-radius: 40px;
+ }
+ 
+ #operator{
+     color: rgb(80, 66, 245);
+     font-weight: bolder;
+ }
+ 
+ @media (max-width: 420px) {
+     .main-div {        
+         height: 520px;
+         width: 85%;
+         margin: 35px auto;
+     }
+ 
+     .input-div {
+         margin-bottom: 15px;
+     }
+ 
+     .input-div input {
+         font-size: 20px;
+     }
+ 
+     .btn-div button {
+         height: 50px;
+         width: 50px;
+         font-size: 18px;
+         margin-left: 10px;
+     }
+     
+ #merge{
+     height: 38px;
+     width: 121px;
+     border-radius: 40px;
+ }
+ 
+ }

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="main">
+        <div class="input-div"><input type="text" id="inputData"></div>
+        <div class="btn-div">
+            <div>
+                <button onclick="del()">DEL</button>
+                <button onclick="clearValue()">AC</button>
+                <button onclick="display(this)" id="operator">%</button>
+                <button id="operator" onclick="display(this)">/</button>
+            </div>
+            <div>
+                <button onclick="display(this)">7</button>
+                <button onclick="display(this)">8</button>
+                <button onclick="display(this)">9</button>
+                <button id="operator" onclick="display(this)">*</button>
+            </div>
+            <div>
+                <button onclick="display(this)">4</button>
+                <button onclick="display(this)">5</button>
+                <button onclick="display(this)">6</button>
+                <button id="operator" onclick="display(this)">-</button>
+            </div>
+    
+            <div>
+                <button onclick="display(this)">1</button>
+                <button onclick="display(this)">2</button>
+                <button onclick="display(this)">3</button>
+                <button id="operator" onclick="display(this)">+</button>
+            </div>
+    
+            <div>
+                <button id="merge" onclick="display(this)">0</button>
+                <button onclick="display(this)">.</button>
+                <button id="operator" onclick="getResult()">=</button>
+            </div>
+    
+        </div>
+
+    </div>
+    </div>    
+    
+
+    <script src="app.js"></script>
+</body>
+</html>
